@@ -2,7 +2,7 @@
 
 package revisao
 
-class LerNumero {
+class `01_LerNumero` {
     fun main() {
         println("Digite um número:")
 
