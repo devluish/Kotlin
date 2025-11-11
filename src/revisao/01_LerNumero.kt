@@ -2,11 +2,15 @@
 
 package revisao
 
-class `01_LerNumero` {
-    fun main() {
-        println("Digite um número:")
+fun main() {
+    print("Digite um número: ")
+    val numero = readln().toIntOrNull()
 
-        val numero = readln().toInt()
+    if (numero == null) {
+        println("Valor inválido. Digite apenas números inteiros.")
+    } else if (numero % 2 == 0) {
+        println("O número $numero é PAR.")
+    } else {
+        println("O número $numero é ÍMPAR.")
     }
-
 }
