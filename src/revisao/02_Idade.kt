@@ -1,5 +1,4 @@
 // Ler uma idade e dizer se é maior ou menor de idade.
-C:\Users\Luis\IdeaProjects\kotlinC:\Users\Luis\IdeaProjects\kotlin
 package revisao
 
 fun main() {
