@@ -4,15 +4,23 @@ package revisao
 
 fun main() {
     print("Digite sua nota de matematica: ")
-    var notaMatematica = readln().toInt()
+    val notaMatematica = readln().toDouble()
+
 
     print("Digite sua nota de Português: ")
-    var notaPortugues = readln().toInt()
+    val notaPortugues = readln().toDouble()
 
     print("Digite sua nota de Biologia: ")
-    var notaBiologia = readln().toInt()
+    val notaBiologia = readln().toDouble()
 
-    var somaTotal = (notaMatematica + notaPortugues + notaBiologia) / 3
+    val media = (notaMatematica + notaPortugues + notaBiologia) / 3.0
 
-    println("Média das notas: $somaTotal")
+    println("A soma da média: %.2f".format(media))
+
+    val status = when {
+        media >= 7.0 -> "aprovado"
+        media >= 5.0 -> "recuperação"
+        else -> "reprovado"
+    }
+    print("\nStatus: $status")
 }

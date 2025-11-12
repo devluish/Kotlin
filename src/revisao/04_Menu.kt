@@ -2,5 +2,34 @@
 
 package revisao
 
-class `04_Menu` {
+import kotlin.concurrent.thread
+
+fun main() {
+    println("----------------------")
+    println("Bem-vindo ao Menu\n")
+    println("1- Cadastrar")
+    println("2- Listar")
+    println("3- Sair")
+    println("----------------------")
+
+    var opcaoInserida = readln().toInt()
+
+    when (opcaoInserida) {
+        1 -> cadastrar()
+        2 -> listar()
+        3 -> sair()
+        else -> ("Opção invalida")
+    }
+}
+
+fun cadastrar(){
+    println("Cadastro de usuário")
+}
+
+fun listar(){
+    println("Listar usuários")
+}
+
+fun sair(){
+    println("Saindo do sistema....")
 }
