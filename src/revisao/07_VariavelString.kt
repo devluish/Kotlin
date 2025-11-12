@@ -2,5 +2,6 @@
 
 package revisao
 
-class `07_VariavelString` {
+fun main() {
+
 }
