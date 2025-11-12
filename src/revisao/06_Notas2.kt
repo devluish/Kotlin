@@ -2,5 +2,10 @@
 
 package revisao
 
-class `06_Notas2` {
+fun main() {
+    print("Insira sua nota: ")
+    var notaInserida = readln().toInt()
+
+    
+
 }
