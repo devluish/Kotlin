@@ -2,5 +2,13 @@
 
 package revisao
 
-class `05_Semana` {
+fun main() {
+    print("Insira um número de 1 a 7: ")
+    val numero = readln().toInt()
+
+    when (numero){
+        1 -> ("Segunda")
+        2 -> )""
+    }
+
 }
