@@ -2,5 +2,6 @@
 
 package revisao
 
-class `02_Idade` {
+fun main() {
+
 }
