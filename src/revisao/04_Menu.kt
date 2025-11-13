@@ -4,7 +4,7 @@ package revisao
 
 import kotlin.concurrent.thread
 
-fun main() {
+fun menu() {
     println("----------------------")
     println("Bem-vindo ao Menu\n")
     println("1- Cadastrar")
@@ -32,4 +32,7 @@ fun listar(){
 
 fun sair(){
     println("Saindo do sistema....")
+}
+fun main(){
+    menu()
 }
