@@ -8,8 +8,9 @@ fun main() {
     println("Digite seu apelido")
     val entradaApelido: String? = readlnOrNull()
 
-    println(entradaApelido?.length)
+    println(entradaApelido?.length) //SAFE CALL -> Só imprime se não for null, caso seja null ele imprime o null
 
+    // isNullOrBlank faz duas checagens ao mesmo tempo: 1- Se for null retorna / true 2- Se for string em branco, retorna true
     val apelido: String? = if (entradaApelido.isNullOrBlank()) null else entradaApelido
 
     val mensagem: String = apelido
@@ -37,3 +38,14 @@ fun main() {
 }
 
 }*/
+
+/*
+    Aquela parte do código que contem o if -> Equivale a isso
+        val x: Tipo
+        if (condicao) {
+            x = valorSeVerdadeiro
+        } else {
+            x = valorSeFalso
+        }
+
+*/
