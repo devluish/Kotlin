@@ -9,7 +9,7 @@ fun main() {
         // Código deseja a ser executado pelo programa
         x = 1 / 0
         println(x)
-    }catch (e: Exception){
+    }catch (trativa: Exception){
         // Caso uma exceção ao bloco try aconteça
         x = 3
         println(x)
